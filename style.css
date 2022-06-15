@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* - Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+
+:root {
+	--soft-blue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--very-dark-blue-main: hsl(217, 54%, 11%);
+	--very-dark-blue-card: hsl(216, 50%, 16%);
+	--very-dark-blue-line: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	background-color: var(--very-dark-blue-main);
+
+	font-family: "Outfit", sans-serif;
+	font-size: 11px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-size: 18px;
+}
+
+.container {
+	/* border: 4px solid black; */
+	margin: 25px;
+	width: 375px;
+	border-radius: 20px;
+	padding: 30px;
+	background-color: var(--very-dark-blue-card);
+}
+
+.eth-img {
+	max-width: 100%;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+h2 {
+	color: var(--white);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 3px;
+
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+
+h3 {
+	color: var(--soft-blue);
+	margin-bottom: 15px;
+	font-weight: 300;
+	margin-left: 3px;
+}
+
+.cyan-eth-small-icon {
+	display: inline;
+
+	/* border: 1px solid coral; */
+}
+
+.cyan-decimals {
+	color: var(--cyan);
+	display: inline-block;
+}
+
+.clock-icon {
+	color: var(--soft-blue);
+	display: inline-block;
+}
+
+.middle-container {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+
+	justify-content: space-between;
+	margin-left: 3px;
+
+	/* border: 1px solid lightgreen; */
+}
+
+.horizontal-ruler {
+	height: 2px;
+	background-color: var(--very-dark-blue-line);
+	border: none;
+	margin: 25px 3px;
+}
+
+.circle-face {
+	border-radius: 50%;
+	border: 3px solid var(--soft-blue);
+	/* transform: scale(50%); */
+	width: 35px;
+	margin-right: 10px;
+
+	border: 1px solid #fff;
+}
+
+.creation-text {
+	color: var(--soft-blue);
+	display: inline-block;
+	letter-spacing: 0.2px;
+
+	/* border: 1px solid lightgreen; */
+}
+
+.creation-text strong {
+	color: var(--white);
+}
+
+.circle-face-with-text {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	margin-left: 3px;
+	font-weight: 300;
+
+	/* border: 1px solid lightgreen; */
+}
